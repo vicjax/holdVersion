@@ -23,6 +23,7 @@
             "Typora.exe",
             "Typora"
         ]
-    ]
+    ],
+    "persist": "data"
 }
 
