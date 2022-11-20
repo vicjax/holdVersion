@@ -12,7 +12,7 @@
     ],
     "architecture": {
         "64bit": {
-            "url": "https://github.com/vicjax/holdVersion/releases/download/untagged-5816b09216ab84f6cfdf/typora-setup-x64_0.9.96.exe",
+            "url": "https://github.com/vicjax/holdVersion/releases/download/Typora0.9.96/typora-setup-x64_0.9.96.exe",
             "hash": "01E49168CF7FF0F2C8E42F22CC1A8681AD97EF805C6E8D08BAC785A8B65CD34A"
         }
     },
