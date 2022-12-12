@@ -1,0 +1,30 @@
+{
+    "version": "0.9.96",
+    "description": "A truly minimal markdown editor",
+    "homepage": "https://typora.io",
+    "license": {
+        "identifier": "Proprietary",
+        "url": "https://support.typora.io/License-Agreement/"
+    },
+    "notes": [
+        "This package is a free beta version",
+        "For new version, install: extras/typora"
+    ],
+    "url": "https://github.com/vicjax/holdVersion/releases/download/Typora0.9.96/typora-setup-x64_0.9.96.exe",
+            "hash": "01E49168CF7FF0F2C8E42F22CC1A8681AD97EF805C6E8D08BAC785A8B65CD34A",
+    "post_install": [
+        " if ( Test-Path \"$env:APPDATA\\Typora\"){",
+        "Move-Item \"$env:APPDATA\\Typora\" \"$env:APPDATA\\Typora.bak\" ;",
+        "}",
+        "New-Item -Path \"$env:APPDATA\\Typora\" -ItemType Junction -Value \"$dir\\data\" ;"
+    ],
+    "persist": "data",
+    "innosetup": true,
+    "bin": "Typora.exe",
+    "shortcuts": [
+        [
+            "Typora.exe",
+            "Typora"
+        ]
+    ]
+}
