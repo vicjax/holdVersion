@@ -10,10 +10,10 @@
         "This package is protable version, for default install, please visit https://u.tools/",
         "Your old configeration has been moved to uools.bak if it exist, you can put it to \"$dir\\data\\\" if you need! "
     ],
+    "url": "https://res.u-tools.cn/version2/uTools-3.3.0.exe#/dl.7z",
+    "hash": "C22C0A0B90550CC3FFBB85EB9D211575AE4BA5907DBF9090EA8B4480277E23BB",
     "architecture": {
         "64bit": {
-            "url": "https://res.u-tools.cn/version2/uTools-3.3.0.exe#/dl.7z",
-            "hash": "C22C0A0B90550CC3FFBB85EB9D211575AE4BA5907DBF9090EA8B4480277E23BB",
             "pre_install": "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\""
         }
     },
