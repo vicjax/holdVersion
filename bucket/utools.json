@@ -29,6 +29,7 @@
         "url": "https://res.u-tools.cn/version2/uTools-$version.exe"
     },
     "persist": "data",
+    "innosetup": true,
     "bin": "uTools.exe",
     "shortcuts": [
         [
