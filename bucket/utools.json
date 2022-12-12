@@ -18,11 +18,11 @@
         }
     },
     "post_install": [
+        "Remove-Item \"$dir\\`$*\" -Recurse",
         " if ( Test-Path \"$env:APPDATA\\utools\"){",
         "Move-Item \"$env:APPDATA\\utools\" \"$env:APPDATA\\utools.bak\" ;",
         "}",
-        "New-Item -Path \"$env:APPDATA\\uTools\" -ItemType Junction -Value \"$dir\\data\" ;",
-        "Remove-Item \"$dir\\`$*\" -Recurse"
+        "New-Item -Path \"$env:APPDATA\\uTools\" -ItemType Junction -Value \"$dir\\data\" ;"
     ],
     "checkver": {
         "url": "https://res.u-tools.cn/version2/uTools-$version.exe"
